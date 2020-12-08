@@ -5,11 +5,11 @@ import constantRouter from './constantRouter.js'
 // import NProgress from 'nprogress'
 // import 'nprogress/nprogress.css'
 
-import {
-    getToken
-} from '@/utils/auth.js'
+// import {
+//     getToken
+// } from '@/utils/auth.js'
 
-import settings from '@/settings.js'
+// import settings from '@/settings.js'
 
 // NProgress.configure({
 //     showSpinner: false
@@ -29,23 +29,23 @@ const router = createRouter()
 
 router.beforeEach(async (to, from, next) => {
     //NProgress.start()
-    document.title = to.meta && to.meta.title || settings.app.title
-    const token = getToken()
-    if (!token) {
-        if (to.path === '/login') {
-            next()
-        } else {
-            next(`/login`)
-           // NProgress.done()
-        }
-        return
-    }
-    if (to.path === '/login') {
-        next()
-        // next("/")
-        //NProgress.done()
-        return
-    }
+    // document.title = to.meta && to.meta.title || settings.app.title
+    // const token = getToken()
+    // if (!token) {
+    //     if (to.path === '/login') {
+    //         next()
+    //     } else {
+    //         next(`/login`)
+    //        // NProgress.done()
+    //     }
+    //     return
+    // }
+    // if (to.path === '/login') {
+    //     next()
+    //     // next("/")
+    //     //NProgress.done()
+    //     return
+    // }
     //auth
     
     next()

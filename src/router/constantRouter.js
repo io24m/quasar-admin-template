@@ -12,10 +12,21 @@ const constantRouter = [{
         path: "/",
         component: () => import("@/views/dashboard/Dashboard")
     }]
+}, {
+    name: "图标",
+    path: "/icons",
+    component: Layout,
+    meta: {
+        icon: "fa-tachometer"
+    },
+    children: [{
+        path: "/icons",
+        component: () => import("@/views/icons/Icons")
+    }]
 }];
 
 
- 
+
 
 constantRouter.push({
     hidden: true,
