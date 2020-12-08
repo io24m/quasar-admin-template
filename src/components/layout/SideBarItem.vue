@@ -15,7 +15,7 @@
       </q-expansion-item>
     </template>
     <template v-else>
-      <q-item to="/inbox" exact :inset-level="headerInsetLevel">
+      <q-item to="/" exact :inset-level="headerInsetLevel">
         <q-item-section avatar>
           <q-icon name="inbox" />
         </q-item-section>
@@ -27,9 +27,13 @@
 <script>
 export default {
   props: {
-    item: {},
+    item: {
+      type: Object,
+      required: true,
+    },
     headerInsetLevel: {
-      default: 0,
+      type: Number,
+      default: () => 0,
     },
   },
   name: "SideBarItem",
