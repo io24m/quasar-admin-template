@@ -1,7 +1,9 @@
 <template>
-  <div>
-    <div v-for="(icon, index) in icons" :key="index">
-      {{ icon }} 
+  <div class="row">
+    <div class="col-2 col-md-1" v-for="(icon, index) in icons" :key="index">
+      {{ index }}
+      <!-- <q-icon :name="icon"></q-icon> -->
+      <!-- <q-btn dense flat round>{{index}}</q-btn> -->
     </div>
   </div>
 </template>

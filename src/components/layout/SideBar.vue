@@ -1,8 +1,8 @@
 <template>
   <div>
-    <a-list dense bordered class="rounded-borders">
+    <q-list dense class="rounded-borders">
       <SideBarItem v-for="(item, index) in routers" :key="index" :item="item" />
-    </a-list>
+    </q-list>
   </div>
 </template>
 <script>

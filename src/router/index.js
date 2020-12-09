@@ -1,6 +1,8 @@
 import Vue from "vue"
 import Router from "vue-router"
 import constantRouter from './constantRouter.js'
+import { LoadingBar } from 'quasar'
+
 
 // import NProgress from 'nprogress'
 // import 'nprogress/nprogress.css'
@@ -28,6 +30,8 @@ const createRouter = () => new Router({
 const router = createRouter()
 
 router.beforeEach(async (to, from, next) => {
+    LoadingBar.start()
+
     //NProgress.start()
     // document.title = to.meta && to.meta.title || settings.app.title
     // const token = getToken()
@@ -52,6 +56,7 @@ router.beforeEach(async (to, from, next) => {
 });
 router.afterEach(() => {
     //NProgress.done()
+    LoadingBar.stop()
 })
 
 export default router
