@@ -1,9 +1,9 @@
 <template>
-  <div class="row">
+  <div class="row" justify-start>
     <div class="col-2 col-md-1" v-for="(icon, index) in icons" :key="index">
-      {{ index }}
       <!-- <q-icon :name="icon"></q-icon> -->
-      <!-- <q-btn dense flat round>{{index}}</q-btn> -->
+      <!-- {{ icon }} -->
+      <q-btn dense flat round><q-icon :name="icon"></q-icon></q-btn>
     </div>
   </div>
 </template>
@@ -174,13 +174,13 @@ const icons = [
   "border_top",
   "border_vertical",
   "branding_watermark",
-  "brightness1",
-  "brightness2",
-  "brightness3",
-  "brightness4",
-  "brightness5",
-  "brightness6",
-  "brightness7",
+  // "brightness1",
+  // "brightness2",
+  // "brightness3",
+  // "brightness4",
+  // "brightness5",
+  // "brightness6",
+  // "brightness7",
   "brightness_auto",
   "brightness_high",
   "brightness_low",
@@ -988,7 +988,7 @@ const icons = [
   "room",
   "room_preferences",
   "room_service",
-  "rotate90_degrees_ccw",
+  // "rotate90_degrees_ccw",
   "rotate_left",
   "rotate_right",
   "rounded_corner",
@@ -1059,14 +1059,14 @@ const icons = [
   "shuffle",
   "shutter_speed",
   "sick",
-  "signal_cellular4_bar",
+  // "signal_cellular4_bar",
   "signal_cellular_alt",
-  "signal_cellular_connected_no_internet4_bar",
+  // "signal_cellular_connected_no_internet4_bar",
   "signal_cellular_no_sim",
   "signal_cellular_null",
   "signal_cellular_off",
-  "signal_wifi4_bar",
-  "signal_wifi4_bar_lock",
+  //"signal_wifi4_bar",
+  //"signal_wifi4_bar_lock",
   "signal_wifi_off",
   "sim_card",
   "single_bed",
@@ -1128,7 +1128,7 @@ const icons = [
   "stay_current_portrait",
   "stay_primary_landscape",
   "stay_primary_portrait",
-  "sticky_note2",
+  // "sticky_note2",
   "stop",
   "stop_circle",
   "stop_screen_share",

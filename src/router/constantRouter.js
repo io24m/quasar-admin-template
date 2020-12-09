@@ -1,5 +1,5 @@
 import Layout from "@/components/layout/Layout"
-import Layout1 from "@/views/youtube/Youtube"
+// import Layout1 from "@/views/youtube/Youtube"
 
 
 const constantRouter = [{
@@ -16,7 +16,7 @@ const constantRouter = [{
 },{
     name: "控制台",
     path: "/youtube",
-    component: Layout1,
+    component: Layout,
     meta: {
         icon: "mail"
     },
@@ -27,7 +27,7 @@ const constantRouter = [{
 }, {
     name: "图标",
     path: "/icons",
-    component: Layout1,
+    component: Layout,
     meta: {
         icon: "mail"
     },
