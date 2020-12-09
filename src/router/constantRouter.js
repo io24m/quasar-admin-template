@@ -6,7 +6,7 @@ const constantRouter = [{
     path: "/",
     component: Layout,
     meta: {
-        icon: "fa-tachometer"
+        icon: "mail"
     },
     children: [{
         path: "/",
@@ -17,16 +17,24 @@ const constantRouter = [{
     path: "/icons",
     component: Layout,
     meta: {
-        icon: "fa-tachometer"
+        icon: "mail"
     },
     children: [{
+        name: "图标1",
         path: "/icons",
-        component: () => import("@/views/icons/Icons")
+        component: () => import("@/views/icons/Icons"),
+        meta: {
+            icon: "5g"
+        },
+    }, {
+        name: "图标1",
+        path: "/icons",
+        component: () => import("@/views/icons/Icons"),
+        meta: {
+            icon: "access_alarm"
+        },
     }]
 }];
-
-
-
 
 constantRouter.push({
     hidden: true,
