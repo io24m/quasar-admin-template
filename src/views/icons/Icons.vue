@@ -1,9 +1,9 @@
 <template>
-  <div class="row" justify-start>
+  <div class="row text-primary q-pa-md" justify-start style="font-size: 2em">
     <div class="col-2 col-md-1" v-for="(icon, index) in icons" :key="index">
-      <!-- <q-icon :name="icon"></q-icon> -->
+      <q-icon :name="icon" ></q-icon>
       <!-- {{ icon }} -->
-      <q-btn dense flat round><q-icon :name="icon"></q-icon></q-btn>
+      <!-- <q-btn dense flat round><q-icon :name="icon"></q-icon></q-btn> -->
     </div>
   </div>
 </template>

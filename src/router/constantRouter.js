@@ -7,7 +7,7 @@ const constantRouter = [{
     path: "/",
     component: Layout,
     meta: {
-        icon: "mail"
+        icon: "home"
     },
     children: [{
         path: "/",
